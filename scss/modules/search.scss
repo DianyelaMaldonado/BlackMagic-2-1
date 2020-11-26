@@ -1,9 +1,17 @@
 .search__all-content {
     margin-top: 15rem;
+
+    @media only screen and (max-width: 767px) {
+        margin-top: 8rem;
+    }
 }
 
 .search__img {
     max-width: 100%;
+
+    @media only screen and (max-width: 767px) {
+        display: none;
+    }
 }
 
 h4.search__text {
@@ -11,6 +19,21 @@ h4.search__text {
     font-size: 1.9rem;
     margin-bottom: 3%;
     letter-spacing: 1px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+        font-size: 1.4rem;
+    }
+
+    @media (min-width: 1024px) and (max-width: 1280px) {
+        margin-bottom: 3%;
+        padding: 2%;
+        letter-spacing: 2px;
+        width: 79%;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 1.5rem;
+    }
 }
 
 h2.search__title {
@@ -18,12 +41,27 @@ h2.search__title {
     margin-bottom: 5%;
     line-height: 7rem;
     font-family: $main-font;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 4.5rem;
+        margin-bottom: 8%;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 3.5rem;
+        margin-bottom: 17%;
+        line-height: 5rem;
+    }
 }
 
-.search__fields{
+.search__fields {
     height: auto;
     max-width: 80%;
     position: relative;
+
+    @media only screen and (max-width: 767px) {
+        max-width: 90%;
+    }
 }
 
 .searh__rounded {
@@ -32,6 +70,19 @@ h2.search__title {
     font-size: 1.8rem;
     width: 91%;
     border-radius: 65px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        padding: 6%;
+        font-size: 2rem;
+        width: 100%;
+        border-radius: 65px;
+    }
+
+    @media only screen and (max-width: 767px) {
+        padding: 5%;
+        font-size: 1.8rem;
+        width: 100%;
+    }
 }
 
 .search__button {
@@ -47,128 +98,47 @@ h2.search__title {
     margin-right: 1%;
     border-radius: 50%;
     position: absolute;
-    background: #f96f49; /* Old browsers */
-    background: -moz-linear-gradient(to bottom, #f96f49 0%, #fba92d 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(to bottom, #f96f49 0%,#fba92d 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to bottom, #f96f49 0%,#fba92d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f96f49', endColorstr='#fba92d',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-    box-shadow: 2px 7px 16px rgb(255, 97, 53);
-    -webkit-box-shadow: 2px 7px 16px rgb(255, 97, 53);
-    -moz-box-shadow: 2px 7px 16px rgb(255, 97, 53);
-    -ms-box-shadow: 2px 7px 16px rgb(255, 97, 53);
-}
+    background: $search-orange;
+    background: -moz-linear-gradient(to bottom, $search-orange 0%, $soft-orange 100%);
+    background: -webkit-linear-gradient(to bottom, $search-orange 0% $soft-orange 100%);
+    background: linear-gradient(to bottom, $search-orange 0%, $soft-orange 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr=$search-orange, endColorstr=$soft-orange,GradientType=1 );
+    box-shadow: 2px 7px 16px $search-shading;
+    -webkit-box-shadow: 2px 7px 16px $search-shading;
+    -moz-box-shadow: 2px 7px 16px $search-shading;
+    -ms-box-shadow: 2px 7px 16px $search-shading;
 
-@media only screen and (min-width: 768px) and (max-width: 1024px)  {
-    h2.search__title {
-        font-size: 4.5rem;
-        margin-bottom: 8%;
-        line-height: 6rem;
-    }
-
-    .searh__rounded {
-        padding: 6%;
-        border: none;
-        font-size: 2rem;
-        width: 100%;
-        border-radius: 65px;
-    }
-
-    h4.search__text {
-        font-size: 1.5rem;
-    }
-
-    .search__button {
-        top: 0;
-        bottom: 0;
-        left: 270px;
+    @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+        left: auto;
         width: 50px;
         height: 50px;
-        right: inherit;
-        margin: auto;
-        border: none;
-        color: white;
-        font-size: 2rem;
-        margin-right: 1%;
-
-    }
-}
-
-@media (min-width: 1024px) and (max-width: 1280px) {
-    h4.search__text {
-        margin-bottom: 3%;
-        padding: 2%;
-        letter-spacing: 2px;
-        width: 79%;
+        right: -31px;
     }
 
-    .search__button {
-        left: 375px;
-    }
-}
-
-@media only screen and (max-width: 767px) {
-    .searh__rounded {
-        padding: 5%;
-        font-size: 1.8rem;
-        width: 100%;
-    }
-
-    .search__button {
-        top: 0;
-        bottom: 0;
+    @media only screen and (max-width: 767px) {
         right: -18px;
         width: 40px;
         height: 40px;
-        margin: auto;
-        border: none;
-        color: white;
         font-size: 1.5rem;
         margin-right: 0%;
-        border-radius: 50%;
-        position: absolute;
-        background: #f96f49;
-        background: -moz-linear-gradient(to bottom, #f96f49 0%, #fba92d 100%);
-        background: -webkit-linear-gradient(to bottom, #f96f49 0%, #fba92d 100%);
-        background: linear-gradient(to bottom, #f96f49 0%, #fba92d 100%);
-        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f96f49', endColorstr='#fba92d',GradientType=1 );
-        box-shadow: 2px 7px 16px #ff6135;
-        -webkit-box-shadow: 2px 7px 16px #ff6135;
-        -moz-box-shadow: 2px 7px 16px #ff6135;
-        -ms-box-shadow: 2px 7px 16px #ff6135;
     }
+}
 
-    .search__container   {
+.search__container {
+    @media only screen and (max-width: 767px) {
         width: 90%;
         margin: 0 auto;
     }
+}
 
-    .search__all-content {
-        margin-top: 8rem;
-    }
-
-    h4.search__text {
-        font-size: 1.5rem;
-    }
-
-    h2.search__title {
-        font-size: 3.5rem;
-        margin-bottom: 17%;
-        line-height: 5rem;
-    }
-
-    .search__img {
-        display: none;
-    }
-
-    .search__info {
+.search__info {
+    @media only screen and (max-width: 767px) {
         width: 100%;
     }
+}
 
-    .search__avatar {
+.search__avatar {
+    @media only screen and (max-width: 767px) {
         width: 0;
-    }
-
-    .search__fields {
-        max-width: 90%;
     }
 }
