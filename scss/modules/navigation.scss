@@ -1,0 +1,75 @@
+.nav__container {
+    margin-top: 2rem;
+}
+
+.nav__menu{
+    width: 60%;
+}
+
+.nav__logo {
+    width: 40%;
+}
+
+.nav__logo-puzzle {
+    max-width: 43px;
+}
+
+.nav__m-l li {
+    padding: 0 2rem;
+    display:inline-block;
+}
+
+.nav__in-out li {
+    display:inline-block;
+}
+
+a.nav_ml-a {
+    color:$white;
+    text-decoration: none;
+}
+
+a.nav_ml-a.help__fw-b.nav__round {
+    margin-left: 0%;
+    padding: 15px 25px;
+    border-radius: 28px;
+    background: $highlighted-blue;
+}
+
+.nav_bl {
+    padding-right: 20px;
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    html body {
+        background: url(../assets/bg-colors.png) no-repeat top right;
+        background-size: 80%;
+        background-color: #eceef1;
+    }
+
+    .nav__logo {
+        width: 20%;
+    }
+
+    .nav__menu {
+        width: 80%;
+    }
+
+    .nav__m-l li {
+        padding: 0 1rem;
+        display: inline-block;
+    }
+
+    .nav__menu-list{
+        width: 70%;
+    }
+    .nav__in-out {
+        width: 30%;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    .nav__m-l,
+    .nav__in-out {
+        display: none;
+    }
+}

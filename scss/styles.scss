@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Source+Sans+Pro:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;700&display=swap');
+
+
+$black:#000000;
+$white:#ffffff;
+$gray:#9a9999;
+$line-gray:#b3adad8c;
+$dark-blue:#574DD4;
+$gray-purple:#b4a9c7;
+$dark-gray:#808080;
+$soft-orange:#FFA754;
+$dark-orange:#FF8F58;
+$soft-gray-bg:#eceef1;
+$hover-soft-blue:#574dd442;
+$bg-soft-info:#8d66d80a;
+$highlighted-blue:#5f45e0;
+$main-font:'Didact Gothic', sans-serif;
+$secondary-font:'Raleway', sans-serif;
+
+@import 'partials/reseter';
+@import 'partials/helpers';
+@import 'partials/helpersflex';
+@import 'modules/navigation';
+@import 'modules/search';
+@import 'vendor/slider';
+@import 'partials/grid.scss';
+
+body {
+    font-display: swap;
+    box-sizing: border-box;
+    font-family: $main-font;
+    background: url("../assets/bg-colors.png") no-repeat top right;
+    background-size: 68%;
+    font-size: 1.3rem;
+    background-color: $soft-gray-bg; 
+}
+
+html {
+    font-size: 62.5%; 
+}

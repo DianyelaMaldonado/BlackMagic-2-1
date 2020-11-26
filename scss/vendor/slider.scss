@@ -1,0 +1,202 @@
+.slider__content {
+    position: relative;
+    margin-bottom: 6rem;
+}
+ 
+ .slider__container {
+     width: 80%;
+     margin:0 auto;
+}
+ 
+ .slider__content::after {
+     position: absolute;
+     width: 100%;
+     height: 64.5%;
+     background: #fff;
+     bottom: 0;
+     left: 0;
+     content: "";
+     z-index: -1;
+}
+
+.slider__img {
+text-align: center;
+display: block;
+}
+
+.slider__card-wrapper {
+    background-color: $white;
+}
+
+img.slider__c-logo {
+    width: 54%;
+    height: auto;
+    padding: 10% 0 10% 0;
+    display: inline !important;
+}
+
+h2.slider__title {
+    color: $dark-gray;
+    font-size: 2.2rem;
+    letter-spacing:2px;
+    padding-bottom: 2%;
+}
+
+h2.slider__card-title {
+    margin: 0 9%;
+    padding: 30px 0 17px;
+    font-size: 2rem;
+    border-top: 1px solid $line-gray;
+}
+
+h4.slider__card-subtitle {
+    margin: 0 9%;
+    color: $dark-gray;
+    font-size: 1.9rem;
+    letter-spacing:2px;
+}
+
+span.slider__card-loc {
+    margin: 0 9%;
+    font-size: 1.6rem;
+    color: #C0C0C0;
+    letter-spacing:2px;
+}
+
+.slider__card-price {
+    font-size: 4.1rem;
+    background-clip: text;
+    background: linear-gradient(to right, #9454bf, #2900ef);
+    background-clip: text;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+}
+
+i.fa.fa-map-marker.fa-lg.slider__loc-i {
+    color: $dark-gray;
+}
+
+.slider__card-data {
+    padding-bottom: 55px;
+}
+
+.slider__bt {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: url('../assets/puzzle-purple.png') no-repeat center center;
+    background-color: $white;
+    border: 1px solid $line-gray;
+}
+
+.slider__bt:hover {
+    background: url('../assets/puzzle-white.png') no-repeat center center;
+    background-color: $dark-blue;
+    color: $white;
+    cursor: pointer;
+    -moz-box-shadow: 1px 11px 4px 1px $hover-soft-blue;
+    -webkit-box-shadow: 1px 11px 4px 1px $hover-soft-blue;
+    box-shadow:  1px 11px 4px 1px $hover-soft-blue;
+}
+
+.slider__info {
+background: $bg-soft-info;
+padding: 7% 9% 7%;
+}
+
+.slider__text {
+    font-size: 1.8rem;
+    letter-spacing:2px;
+    color: $gray-purple;
+}
+
+.slider__expand {
+    padding: 40px;
+    font-size: 1.6rem;
+    display: none;
+}
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    h2.slider__title {
+        color: #808080;
+        font-size: 2.4rem;
+        letter-spacing: 2px;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        text-align: center;
+    }
+
+    h4.slider__card-subtitle {
+        font-size: 1.7rem;
+    }
+}
+
+
+
+
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    h2.slider__title {
+        font-size: 2rem;
+        padding-top: 8%;
+        padding-bottom: 3%;
+    }
+
+    h2.slider__card-title {
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    h4.slider__card-subtitle {
+        text-align: center;
+        font-size: 0.8rem;
+    }
+
+    span.slider__card-loc {
+        margin: 0 5%;
+        font-size: 1.6rem;
+    }
+
+    span.slider__card-loc.help__fw-b {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        margin-top: 14%;
+    }
+
+    .slider__card-price {
+        font-size: 2.5rem;
+    }
+}
+
+
+@media only screen and (max-width: 767px){
+
+    .slider__container {
+        width: 60%;
+        margin: 0 auto;
+        padding-top: 8%;
+        padding-bottom: 3%;
+    }
+
+    span.slider__card-loc {
+        font-size: 1.4rem;
+    }
+
+    h2.slider__title {
+        color: #808080;
+        font-size: 1.6rem;
+        letter-spacing: 2px;
+        text-align: center;
+        padding-bottom: 2%;
+        padding-top: 10%;
+    }
+}
