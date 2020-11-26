@@ -21,7 +21,7 @@ h4.search__text {
     letter-spacing: 1px;
 
     @media only screen and (min-width: 768px) and (max-width: 1024px)  {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
     }
 
     @media (min-width: 1024px) and (max-width: 1280px) {
@@ -42,10 +42,11 @@ h2.search__title {
     line-height: 7rem;
     font-family: $main-font;
 
-    @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
         font-size: 4.5rem;
         margin-bottom: 8%;
     }
+
     @media only screen and (max-width: 767px) {
         font-size: 3.5rem;
         margin-bottom: 17%;
@@ -70,7 +71,7 @@ h2.search__title {
     width: 91%;
     border-radius: 65px;
 
-    @media only screen and (min-width: 768px) and (max-width: 1024px)  {
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
         padding: 6%;
         font-size: 2rem;
         width: 100%;
@@ -106,7 +107,6 @@ h2.search__title {
     -webkit-box-shadow: 2px 7px 16px $search-shading;
     -moz-box-shadow: 2px 7px 16px $search-shading;
     -ms-box-shadow: 2px 7px 16px $search-shading;
-
 
     @media only screen and (min-width: 768px) and (max-width: 1024px)  {
         left: auto;

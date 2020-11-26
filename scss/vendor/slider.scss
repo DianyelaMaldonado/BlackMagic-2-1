@@ -6,61 +6,109 @@
  .slider__container {
      width: 80%;
      margin:0 auto;
+
+    @media only screen and (max-width: 767px) {
+        width: 60%;
+        padding-top: 8%;
+        padding-bottom: 3%;
+    }
 }
  
- .slider__content::after {
-     position: absolute;
-     width: 100%;
-     height: 64.5%;
-     background: #fff;
-     bottom: 0;
-     left: 0;
-     content: "";
-     z-index: -1;
+.slider__content::after {
+    position: absolute;
+    width: 100%;
+    height: 64.5%;
+    background: #fff;
+    bottom: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
 }
 
 .slider__img {
-text-align: center;
-display: block;
+    text-align: center;
+    display: block;
 }
 
 .slider__card-wrapper {
     background-color: $white;
 }
 
-img.slider__c-logo {
+.slider__c-logo {
     width: 54%;
     height: auto;
     padding: 10% 0 10% 0;
     display: inline !important;
 }
 
-h2.slider__title {
+.slider__title {
     color: $dark-gray;
     font-size: 2.2rem;
     letter-spacing:2px;
     padding-bottom: 2%;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 2.4rem;
+        padding-top: 8%;
+        padding-bottom: 8%;
+        text-align: center;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: 2rem;
+        padding-top: 8%;
+        padding-bottom: 3%;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 1.6rem;
+        text-align: center;
+        padding-top: 10%;
+    }
 }
 
-h2.slider__card-title {
+.slider__card-title {
     margin: 0 9%;
     padding: 30px 0 17px;
     font-size: 2rem;
     border-top: 1px solid $line-gray;
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        text-align: center;
+        font-size: 1.2rem;
+    }
 }
 
-h4.slider__card-subtitle {
+.slider__card-subtitle {
     margin: 0 9%;
     color: $dark-gray;
     font-size: 1.9rem;
     letter-spacing:2px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px) {
+        font-size: 1.7rem;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        text-align: center;
+        font-size: 0.8rem;
+    }
 }
 
-span.slider__card-loc {
+.slider__card-loc {
     margin: 0 9%;
     font-size: 1.6rem;
     color: #C0C0C0;
     letter-spacing:2px;
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        margin: 0 5%;
+        font-size: 1.6rem;
+    }
+
+    @media only screen and (max-width: 767px) {
+        font-size: 1.4rem;
+    }
 }
 
 .slider__card-price {
@@ -73,9 +121,13 @@ span.slider__card-loc {
     -moz-background-clip: text;
     -webkit-text-fill-color: transparent;
     -moz-text-fill-color: transparent;
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: 2.5rem;
+    }
 }
 
-i.fa.fa-map-marker.fa-lg.slider__loc-i {
+.slider__loc-i {
     color: $dark-gray;
 }
 
@@ -87,13 +139,13 @@ i.fa.fa-map-marker.fa-lg.slider__loc-i {
     width: 60px;
     height: 60px;
     border-radius: 50%;
-    background: url('../assets/puzzle-purple.png') no-repeat center center;
+    background: url($puzzle) no-repeat center center;
     background-color: $white;
     border: 1px solid $line-gray;
 }
 
 .slider__bt:hover {
-    background: url('../assets/puzzle-white.png') no-repeat center center;
+    background: url($puzzle-hover) no-repeat center center;
     background-color: $dark-blue;
     color: $white;
     cursor: pointer;
@@ -103,8 +155,8 @@ i.fa.fa-map-marker.fa-lg.slider__loc-i {
 }
 
 .slider__info {
-background: $bg-soft-info;
-padding: 7% 9% 7%;
+    background: $bg-soft-info;
+    padding: 7% 9% 7%;
 }
 
 .slider__text {
@@ -119,84 +171,12 @@ padding: 7% 9% 7%;
     display: none;
 }
 
-
-
-
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-    h2.slider__title {
-        color: #808080;
-        font-size: 2.4rem;
-        letter-spacing: 2px;
-        padding-top: 8%;
-        padding-bottom: 8%;
-        text-align: center;
-    }
-
-    h4.slider__card-subtitle {
-        font-size: 1.7rem;
-    }
-}
-
-
-
-
-
-@media (min-width: 1025px) and (max-width: 1280px){
-    h2.slider__title {
-        font-size: 2rem;
-        padding-top: 8%;
-        padding-bottom: 3%;
-    }
-
-    h2.slider__card-title {
-        text-align: center;
-        font-size: 1.2rem;
-    }
-
-    h4.slider__card-subtitle {
-        text-align: center;
-        font-size: 0.8rem;
-    }
-
-    span.slider__card-loc {
-        margin: 0 5%;
-        font-size: 1.6rem;
-    }
-
-    span.slider__card-loc.help__fw-b {
+.help__fw-b {
+    @media (min-width: 1025px) and (max-width: 1280px) {
         display: flex;
         flex-direction: column;
         align-items: center;
         font-size: 1rem;
         margin-top: 14%;
-    }
-
-    .slider__card-price {
-        font-size: 2.5rem;
-    }
-}
-
-
-@media only screen and (max-width: 767px){
-
-    .slider__container {
-        width: 60%;
-        margin: 0 auto;
-        padding-top: 8%;
-        padding-bottom: 3%;
-    }
-
-    span.slider__card-loc {
-        font-size: 1.4rem;
-    }
-
-    h2.slider__title {
-        color: #808080;
-        font-size: 1.6rem;
-        letter-spacing: 2px;
-        text-align: center;
-        padding-bottom: 2%;
-        padding-top: 10%;
     }
 }
