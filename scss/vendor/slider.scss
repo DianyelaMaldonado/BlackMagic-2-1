@@ -223,3 +223,20 @@
 .slider__slick {
     margin-left: 9%;
 }
+
+.slider__outside {
+    position:relative;
+}
+
+.slider__outside  {
+    &:after {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 57.2%;
+        background: $white;;
+        bottom: 0;
+        left: 0;
+        z-index: -2;
+    }
+}
