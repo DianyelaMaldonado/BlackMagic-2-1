@@ -54,11 +54,20 @@ a.nav_ml-a {
     padding: 15px 25px;
     border-radius: 28px;
     background: $highlighted-blue;
+    margin-right: 1em;
 }
 
 .nav_bl {
-    padding-right: 20px;
+    margin-right: 20px;
+
+    @media only screen and (min-width: 768px) and (max-width: 1024px){ 
+    margin-right: 10px;
+    }   
 }
+
+
+
+
 
 .nav__menu-list {
     @media only screen and (min-width: 768px) and (max-width: 1024px) {
