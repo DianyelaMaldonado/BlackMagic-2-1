@@ -77,3 +77,27 @@
     }
 
 }
+
+@keyframes latir {
+    0% {
+        transform: scale(1, 1);
+    }
+    20% {
+        transform: scale(0.8, 0.8);
+    }
+    40% {
+        transform: scale(0.6, 0.6);
+    }
+    60% {
+        transform: scale(0.4, 0.4);
+    }
+    70% {
+        transform: scale(0.6, 0.6);
+    }
+    85% {
+        transform: scale(0.8, 0.8);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}

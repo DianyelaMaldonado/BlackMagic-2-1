@@ -19,6 +19,7 @@
 
 .nav__logo-puzzle {
     max-width: 43px;
+    animation: latir infinite 3s linear;
 }
 
 .nav__m-l {
@@ -64,10 +65,6 @@ a.nav_ml-a {
     margin-right: 10px;
     }   
 }
-
-
-
-
 
 .nav__menu-list {
     @media only screen and (min-width: 768px) and (max-width: 1024px) {

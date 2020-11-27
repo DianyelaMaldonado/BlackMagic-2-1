@@ -33,7 +33,9 @@ h4.search__text {
     }
 
     @media only screen and (max-width: 767px) {
-        font-size: 1.5rem;
+        margin-bottom: 2em;
+        font-size: 1.3rem;
+        width: 234px;
     }
 }
 
@@ -49,9 +51,9 @@ h2.search__title {
     }
 
     @media only screen and (max-width: 767px) {
-        font-size: 3.5rem;
-        margin-bottom: 17%;
-        line-height: 5rem;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+        line-height: 3rem;
     }
 }
 
