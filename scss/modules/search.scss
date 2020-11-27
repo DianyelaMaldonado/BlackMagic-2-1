@@ -16,28 +16,31 @@
 
 h4.search__text {
     color: $gray;
-    font-size: 1.9rem;
-    margin-bottom: 3%;
-    letter-spacing: 1px;
+    font-size: 1.6rem;
+    margin-bottom: 2em;
+    letter-spacing: 2px;
 
     @media only screen and (min-width: 768px) and (max-width: 1024px)  {
         font-size: 1.4rem;
+        letter-spacing: 2px;
     }
 
     @media (min-width: 1024px) and (max-width: 1280px) {
-        margin-bottom: 3%;
+        margin-bottom: 2em;
         padding: 2%;
         letter-spacing: 2px;
         width: 79%;
     }
 
     @media only screen and (max-width: 767px) {
-        font-size: 1.5rem;
+        margin-bottom: 2em;
+        font-size: 1.3rem;
+        width: 234px;
     }
 }
 
 h2.search__title {
-    font-size: 5.7rem;
+    font-size: 5rem;
     margin-bottom: 5%;
     line-height: 7rem;
     font-family: $main-font;
@@ -48,9 +51,9 @@ h2.search__title {
     }
 
     @media only screen and (max-width: 767px) {
-        font-size: 3.5rem;
-        margin-bottom: 17%;
-        line-height: 5rem;
+        font-size: 2.5rem;
+        margin-bottom: 5rem;
+        line-height: 3rem;
     }
 }
 

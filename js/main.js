@@ -20,50 +20,53 @@ function showDescription(target){
 }
 
 function slickSlider() {
-    $('.slider__slick').slick(
-      {
-        dots: false,
-        arrows:false,
-        infinite: true,
-        speed: 300,
-        centerMode: true,
-        centerPadding: '100px',
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-            {
-              breakpoint: 1100,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                centerPadding: '50px',
-              }
-            },
-            {
-              breakpoint: 1024,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 1,
-                centerPadding: '50px',
-              }
-            },
-            {
-              breakpoint: 600,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                centerPadding: '40px',
-              }
-            },
-            {
-              breakpoint: 480,
-              settings: {
-                slidesToShow: 1,
-                slidesToScroll: 1,
-                centerPadding: '40px',
-              }
+  $('.slider__slick').slick(
+    {
+      dots: false,
+      arrows:false,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 5,
+      slidesToScroll: 5,
+      swipeToSlide:true,
+      responsive: [
+          {
+            breakpoint: 1100,
+            settings: {
+              centerMode: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              centerPadding: '50px',
             }
-          ]
-      }
-    );
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              centerMode: true,
+              slidesToShow: 2,
+              slidesToScroll: 1,
+              centerPadding: '50px',
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerPadding: '40px',
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              centerMode: true,
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              centerPadding: '40px',
+            }
+          }
+        ]
+    }
+  );
 }
