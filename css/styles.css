@@ -616,14 +616,15 @@ h2.search__title {
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
   box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-  position: relative; }
+  position: relative;
+  padding: 15px 0; }
   .hvr-underline-from-center:before {
     content: "";
     position: absolute;
     z-index: -1;
     left: 51%;
     right: 51%;
-    bottom: -5px;
+    bottom: 5px;
     background: #ffffff;
     height: 4px;
     -webkit-transition-property: left, right;
